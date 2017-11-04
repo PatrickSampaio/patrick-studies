@@ -5,7 +5,7 @@ Some basic concepts about S3:
 - S3 was made to store objects
 - FIles size can go from 0 Bytes to 5 TB
 - There is not size limit on S3's disk
-- S3's URL is composed like this '[region].amazonaws.com/[nom]'
+- S3's URL is composed like this `[region].amazonaws.com/[nom]`
 - When you uplod an file to S3 you recieve an 200 http status code
 - By default S3's and his files are set to private
 - S3's access to buckets are managed by ACL or Bucket Policies
@@ -35,5 +35,7 @@ Charged For
 - Requests
 - Storage Management Princing
 - Data transfer
+
+Static Web Site URL Pattern
 
 `{bucket-name}s3-website-{region}.amazonaws.com`
