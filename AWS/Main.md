@@ -28,3 +28,12 @@ Storage Tiers/Classes
 - SS3 - IA (Infrequently Acessed) - Files that are accessed sporadically, but require speed in the retrieving
 - Reduced Redundancy Storage - It's an S3 for an year. If you make the commitment of using it for an Year, you get some discount
 - Glacier - It's an S3 used to retrieve archical files, files store on Glacier can take hours to be retrieved
+
+Charged For
+
+- Storaging
+- Requests
+- Storage Management Princing
+- Data transfer
+
+`{bucket-name}s3-website-{region}.amazonaws.com`
