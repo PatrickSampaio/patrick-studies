@@ -129,4 +129,18 @@ Commands:
 	s - is the shell directory, if empty, it's the default
 	username
 
-- `userdell `
+	`passwd user` <- this command will give this user and passwd
+
+- `userdell user`
+
+Proccess
+
+	If something is being done on linux, there is an proccess attached to it and a address. Kernel keeps track of data about the proccess, like who owns it, how much it consumes in terms of memory and etc.
+	Every proccess has an ID. You can se which information Kernel has about the proccess by typing `top` on shell
+
+		`proccess init has an ID 1, he is the fater of all proccess`
+
+	A proccess owned by a user, not necessarily will have the owner permission
+	Niceness <- remember Aires
+	When an proccess is misbehaving the parent proccess is notified
+	When a proccess dies the parent proccess is notified	
