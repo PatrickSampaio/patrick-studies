@@ -59,3 +59,74 @@ Unique
 GREP
 `cat somefile.txt | grep "COMMAND"`
 	Grep is an command to search patterns
+
+##Permissions
+
+d - owner
+r - reader
+w - write
+x - execute
+
+-rw-rw-r--
+
+owner can read and write
+users on the owner's group can read and write
+everyone can read
+
+7 - Can read write and execute
+6 - Can read and write
+4 - Can read
+0 - Can do nothing
+
+640 - Owner can read and write, the owner's group can read an everyone else can't do nothing
+
+`chmod 740 somefile.txt`
+
+`chown owner:group directory`
+
+The command above changes the onwer's and owner'group of the file
+
+##Groups and Users
+
+`sudo -i`
+`tail /etc/passwd`
+
+usbmux:x:120:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
+
+- first field is the username `usbmux`
+- the x is in place of the password `x` 
+- 120 is the user id `120`
+- 46 is the default group id `46`
+- humam readable information of the user `usbmux daemon ,,,`
+- home directory `/var/lib/usbmux`
+- the default shell `/bin/false`
+
+`tail etc/shadow`
+
+usbmux:*:17379:0:99999:7:::
+
+- `usbmux` is the username
+- `*` is the user password hashed, if the passwords is a `!`, you can't loggin with this user
+- `17379` date that this password was set
+- `0` :
+- `99999` : date that the password expires
+- `7` : how many days i can have to change the password
+
+`tail etc/group`
+
+plugdev:x:46:
+
+- `plugdev` is the name of the group
+- `46` is the id of the group
+
+Commands:
+
+- `useradd -m -d /home/testuser -u 1501 -g 66 -s`
+	m - options is for create an home for that user
+	d - options is for the home directory
+	u - is for user id
+	g - is for user's group id
+	s - is the shell directory, if empty, it's the default
+	username
+
+- `userdell `
