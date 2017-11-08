@@ -138,9 +138,29 @@ Proccess
 	If something is being done on linux, there is an proccess attached to it and a address. Kernel keeps track of data about the proccess, like who owns it, how much it consumes in terms of memory and etc.
 	Every proccess has an ID. You can se which information Kernel has about the proccess by typing `top` on shell
 
-		`proccess init has an ID 1, he is the fater of all proccess`
+		`proccess init has an ID 1, he is the father of all proccess`
 
 	A proccess owned by a user, not necessarily will have the owner permission
 	Niceness <- remember Aires
 	When an proccess is misbehaving the parent proccess is notified
-	When a proccess dies the parent proccess is notified	
+	When a proccess dies the parent proccess is notified
+
+Signals
+
+	Signals are how the proccess comunicate, signals are triggered by Kernel, when an process do a bad thing, like divide by 0, or by other process. This is how process comunicate, and how kernel keeps track of how is the system doing
+
+Process States
+
+1 - Running
+2 - Sleeping, waiting for something
+3 - Zombie, finished what he needed to do, and it's waiting to yield the result and be killed
+4 - Stopped, waiting to be resumed
+
+
+
+
+
+
+
+
+		
