@@ -1,4 +1,4 @@
-SOURCE = "postgres"
+SOURCE = "file"
 
 PROVIDER = 'postgresql://postgres:postgres@localhost/dvdrental'
 
