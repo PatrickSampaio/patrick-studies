@@ -1,3 +1,5 @@
-PROVIDER = 'postgresql://postgresql@localhost/dvd_rental'
+SOURCE = "postgres"
 
-QUERY = "SELECT * FROM ACTORS"
+PROVIDER = 'postgresql://postgres:postgres@localhost/dvdrental'
+
+QUERY = "SELECT * FROM ACTOR"

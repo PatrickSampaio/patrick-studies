@@ -2,7 +2,7 @@ import abc
 
 class AbsFacade(metaclass=abc.ABCMeta):
      @abc.abstractmethod
-     def get_employees(self):
+     def get_actors(self):
          pass
 
      @abc.abstractproperty
