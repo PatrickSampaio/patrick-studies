@@ -154,7 +154,41 @@ Process States
 1 - Running
 2 - Sleeping, waiting for something
 3 - Zombie, finished what he needed to do, and it's waiting to yield the result and be killed
-4 - Stopped, waiting to be resumed
+4 - Stopped, waiting to resume
+
+Linux File System - Proc
+
+-ETC: System configuration
+-home: Home for all users
+-lib/lib6: It would be dll's on windows, they are librarys that the Linux can use
+-media: Where you can mount things
+-opt: Optional software
+-proc: One directory for each process
+-root: Root home, by default is empty
+-sbin: Critical files that your machine requires to run
+-tmp: Temporary space for holding stuff, when you turn off your computer, this folder is emptied
+-var: A hole of different stuff
+
+Types of files that linux knows:
+
+-L: Link; It's a simbolic link to a file
+-B: block device files, it's a place on the driver on linux, comunicates with the hardware itself
+-C: caracter device files, between our actual system and the mouse itself, for example
+-D: directories; Reference to files
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
 
 
 
