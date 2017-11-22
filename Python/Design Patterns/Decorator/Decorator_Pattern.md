@@ -14,3 +14,7 @@ This pattern will make your code:
 - Many little objects	
 
 You should use this pattern when u need to add new functionality to existing objects. This is better way of adding new functionality to existing objects
+
+- Object responsabilities and behaviours should be dynamically added/removed
+- Concrete implementations should be decoupled from responsabilities and behaviours
+- When sub - classing is to costly to dynamically add/remove responsabilities
