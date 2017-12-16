@@ -28,3 +28,10 @@ You can run a container in an background proccess
 - `docker container inspect name`
 - `docker container uname name`
 
+## Docker Image
+
+- `docker image rm`
+- `docker image inspect`
+- `docker image tag`
+- `docker image build`
+- `docker image build -t ex-simple-build .`
