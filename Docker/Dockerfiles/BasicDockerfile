@@ -1,0 +1,11 @@
+## Base image
+FROM node
+MAINTAINER patricksampaio48@gmail.com
+RUN git clone -q https://github.com/ianmiell/todo.git
+## Move to the directory
+WORKDIR todo
+RUN npm installl > /dev/null
+## Port that will be listened to by the container instanciated by this image
+EXPOSE 8000
+##Commands that will run when the image is instanciated
+CMD ["npm", "start"]
