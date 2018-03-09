@@ -35,3 +35,22 @@ You can run a container in an background proccess
 - `docker image tag`
 - `docker image build`
 - `docker image build -t ex-simple-build .`
+
+## Docker layering
+
+Multiple container from a same image share layers between then. What does this mean?
+
+This means, for instance:
+
+"I have an `docker image` that builds upon a `ubuntu image` and a `node image`, if i have more then 2 containers build from that image, it will share the `ubuntu` and `node` layer."
+
+This can be done because of the static nature of those layers.
+
+
+
+
+
+
+
+
+
