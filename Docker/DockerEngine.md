@@ -38,9 +38,9 @@ When a command is send to docker, those are the steps behind:
 
 ![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-10%2010-54-44.png)
 
-1 - The command is written in the terminal
-2 - There is an HTTP request to an UNIX Domain Socket
-3 - The UNIX domain socket calls the docker daemon
+- 1 - The command is written in the terminal
+- 2 - There is an HTTP request to an UNIX Domain Socket
+- 3 - The UNIX domain socket calls the docker daemon
 
 ![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-10%2011-04-18.png)
 
