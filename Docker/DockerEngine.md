@@ -46,7 +46,7 @@ When a command is send to docker, those are the steps behind:
 
 Try to run the command to see if it runs
 
-Technique 5 - Use ports to connect to containers
+### Use ports to connect to containers
 
 `docker run -d -p 10002:80 --name blog2 tutum/wordpress`
 
@@ -54,4 +54,21 @@ Technique 5 - Use ports to connect to containers
 -p tells that the port 10002 of the host will `hit` the port 80 of the docker container
 -name name the docker container as blog2
 And finally the image that the container is build upon is the tutum/wordpress
+
+### Linking containers for port isolation
+
+This is useful because you can expose a port of an docker container to only those that are actually going to use, thus making your application more secure.
+
+`docker run --name my-container -e MYSQL_PASSWORD=very_secure_password -d mysql
+docker run --name access-to-my-container --link my-container:mysql -p 10003:80 -d debian`
+
+The protagonist here is the `link` command, this command is the fundamental relation of microservice. This allows you to do work on the `my-container` container and the `access-to-my-container` does not care, and vice-versa. If you think, it makes those thing more like a unit.
+
+But what does the link command do?
+
+It's a bit messy my description of what if does, but i'm gonna try to explain. It's and flag that allows an container to connect to whatever container has that name.
+
+
+
+
 
