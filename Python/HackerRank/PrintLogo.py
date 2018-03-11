@@ -1,4 +1,4 @@
-#Replace all ______ with rjust, ljust or center. 
+#https://www.hackerrank.com/challenges/text-alignment/problem
 
 thickness = int(input()) #This must be an odd number
 c = 'H'
