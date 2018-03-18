@@ -66,8 +66,12 @@ time-intesive setup on the configuration
 There are some issues with that design as well. YOu have some duplication between images, and you have to make work
 to link those container, `docker-compose` will help us
 
+## Docker Commit
 
+If you wanna to save the state of an container at a given moment, there is a command for doing that.
 
+![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-18%2017-29-16.png)
 
+One thing, this command will save the filesystem state, not the proccess.
 
-
+![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-18%2017-30-25.png)
