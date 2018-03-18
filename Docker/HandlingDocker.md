@@ -75,3 +75,22 @@ If you wanna to save the state of an container at a given moment, there is a com
 One thing, this command will save the filesystem state, not the proccess.
 
 ![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-18%2017-30-25.png)
+
+## Docker Tagging
+
+Instead of using random ID's you can easily name an docker image using this technique
+
+![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-18%2017-40-29.png)
+
+There are some concepts there are starting to get confuse
+
+![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-18%2017-40-38.png)
+
+An image is just an layer above his parent image.
+You can think about an Repository like an Git Repository, and when you clone the repository, you get the last image generated, an in the repository there are a lot of commit, each one it's going to be an image
+
+Example of an multi image repository:
+
+![alt text](https://github.com/PatrickSampaio/patrick-studies/blob/master/images/Screenshot%20from%202018-03-18%2017-45-14.png)
+
+The latest means default in this context
